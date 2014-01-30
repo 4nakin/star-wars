@@ -24,17 +24,11 @@
 		<script src="js/pull.js"></script>
 		<script src="js/fork.js"></script>
 		<script src="js/audio.js"></script>
-		<title>Star Wars Miniature</title>
-
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css" />
-	</head>
-	<body onload="Game.intro()" class="intro">
-
-<script type="text/javascript">
-  ( function() {
+		
+		<script type="text/javascript">
+  document.body.onload = function() {
     if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
-    var unit = {"publisher":"4nakin","width":300,"height":"auto","sid":"star-rogue","color_site_link":"0000CC","color_text":"FFFFFF","color_bg":"000000","fluidH":true};
+    var unit = {"publisher":"4nakin","width":300,"height":250,"sid":"star-rogue","color_site_link":"0000CC","color_text":"FFFFFF","color_bg":"000000","fluidH":true};
     var placement_id = window.CHITIKA.units.length;
     window.CHITIKA.units.push(unit);
     document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
@@ -42,8 +36,15 @@
     s.type = 'text/javascript';
     s.src = '//cdn.chitika.net/getads.js';
     try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e) { document.write(s.outerHTML); }
-}());
+};
 </script>
+		
+		<title>Star Wars Miniature</title>
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css" />
+	</head>
+	<body onload="Game.intro()" class="intro">
 
 <pre>
          _________________      ____         __________        
