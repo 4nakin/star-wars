@@ -111,6 +111,16 @@ var Game = {
 		document.removeEventListener("click", this);
 		document.body.innerHTML = "";
 
+		if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+		var unit = {"publisher":"4nakin","width":300,"height":250,"sid":"star-rogue","color_site_link":"0000CC","color_text":"FFFFFF","color_bg":"000000","fluidH":true};
+		var placement_id = window.CHITIKA.units.length;
+		window.CHITIKA.units.push(unit);		
+		document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.src = '//cdn.chitika.net/getads.js';
+		try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e) { document.write(s.outerHTML); }
+
 		this.terrain = new Game.Terrain();
 		this.player = new Game.Player(color, saber);
 
