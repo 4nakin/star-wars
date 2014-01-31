@@ -121,8 +121,7 @@ var Game = {
 		s.src = '//cdn.chitika.net/getads.js';
 		try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e) { document.write(s.outerHTML); }
 
-		document.write('<div style="float:right"><script type="text/javascript"><!--
-amazon_ad_tag = "starrogue-20"; amazon_ad_width = "160"; amazon_ad_height = "600";//--></script>
+		document.write('<div style="float:right"><script type="text/javascript"></script>
 <script type="text/javascript" src="http://ir-na.amazon-adsystem.com/s/ads.js"></script></div>');
 
 		this.terrain = new Game.Terrain();
