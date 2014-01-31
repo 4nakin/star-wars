@@ -121,7 +121,7 @@ var Game = {
 		//s.src = '//cdn.chitika.net/getads.js';
 		//try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e) { document.write(s.outerHTML); }
 
-		document.write('<div style="float:right"><div style="float:right" id="chitikaAdBlock-' + placement_id + '"></div><script type="text/javascript">' +
+		document.write('<div style="float:right"><div id="chitikaAdBlock-' + placement_id + '"></div><script type="text/javascript">' +
 'amazon_ad_tag = "starrogue-20"; amazon_ad_width = "160"; amazon_ad_height = "600";</script>' +
 '<script type="text/javascript" src="http://ir-na.amazon-adsystem.com/s/ads.js"></script></div>');
 		//document.write('<div style="float:right" id="chitikaAdBlock-' + placement_id + '"></div>');
