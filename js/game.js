@@ -115,15 +115,20 @@ var Game = {
 		var unit = {"publisher":"4nakin","width":300,"height":250,"sid":"star-rogue","color_site_link":"0000CC","color_text":"000000","color_bg":"FFFFFF","fluidH":true};
 		var placement_id = window.CHITIKA.units.length;
 		window.CHITIKA.units.push(unit);		
-		document.write('<div style="float:right" id="chitikaAdBlock-' + placement_id + '"></div>');
-		var s = document.createElement('script');
-		s.type = 'text/javascript';
-		s.src = '//cdn.chitika.net/getads.js';
-		try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e) { document.write(s.outerHTML); }
+		//document.write('<div style="float:right" id="chitikaAdBlock-' + placement_id + '"></div>');
+		//var s = document.createElement('script');
+		//s.type = 'text/javascript';
+		//s.src = '//cdn.chitika.net/getads.js';
+		//try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e) { document.write(s.outerHTML); }
 
-		document.write('<div style="float:right"><script type="text/javascript">' +
+		document.write('<div style="float:right"><div style="float:right" id="chitikaAdBlock-' + placement_id + '"></div><script type="text/javascript">' +
 'amazon_ad_tag = "starrogue-20"; amazon_ad_width = "160"; amazon_ad_height = "600";</script>' +
 '<script type="text/javascript" src="http://ir-na.amazon-adsystem.com/s/ads.js"></script></div>');
+		//document.write('<div style="float:right" id="chitikaAdBlock-' + placement_id + '"></div>');
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.src = '//cdn.chitika.net/getads.js';
+                try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e) { document.write(s.outerHTML); }
 
 		this.terrain = new Game.Terrain();
 		this.player = new Game.Player(color, saber);
