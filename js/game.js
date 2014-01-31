@@ -112,7 +112,7 @@ var Game = {
 		document.body.innerHTML = "";
 
 		if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
-		var unit = {"publisher":"4nakin","width":300,"height":250,"sid":"star-rogue","color_site_link":"0000CC","color_text":"FFFFFF","color_bg":"000000","fluidH":true};
+		var unit = {"publisher":"4nakin","width":300,"height":250,"sid":"star-rogue","color_site_link":"0000CC","color_text":"000000","color_bg":"FFFFFF","fluidH":true};
 		var placement_id = window.CHITIKA.units.length;
 		window.CHITIKA.units.push(unit);		
 		document.write('<div style="float:right" id="chitikaAdBlock-' + placement_id + '"></div>');
